@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class OnPickupChangeColor : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private Material materialToChange;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        materialToChange = GetComponent<Renderer>().material;
     }
+    
 }
